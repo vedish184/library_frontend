@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <style>
+        .container{
+    width: 25%;
+    height: 70vh;
+    padding: 20px;
+    position: relative;
+    z-index: 100;
+    border-radius: 20px;
+    box-shadow:  0px 5px 25px rgba(5,5,0,0.5);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+    </style>
+    <div class="container">
+        <form action="" id="contactForm">
+            <div class="alert">You are logged in</div>
+
+            
+            <div class="inputBox">
+                <h3>Enter Email :</h3>
+                <input type="email" name=""  id="emailid" placeholder="enter email-id"/>
+            </div>
+            <div class="inputBox">
+                <h3>Enter password :</h3>
+                <input type="password" name="pswd1"  id="pswd1" placeholder="enter password"/>
+                <span id = "message" style="color:red"> </span> <br><br>
+            </div>
+            
+            <div class="inputBox">
+                <button type="submit" onclick="matchPassword()">Submit</button>
+            </div>
+
+        </form>
+
+    </div>
+</body>
+</html>
